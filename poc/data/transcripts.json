@@ -1,0 +1,14 @@
+{
+  "M0001": [
+    {
+      "transcript_id": "T-50001",
+      "text": "Member: Hi, I'm calling about a claim denial and whether my MRI needed prior authorization. Agent: Let me check your eligibility and benefits first. Your coverage is active. For the MRI, it looks like the claim was denied due to missing authorization. We can reach out to the provider to submit clinical notes and the auth request. Member: What should I do next? Agent: I'll outline the next steps and log a note in your case."
+    }
+  ],
+  "M0002": [
+    {
+      "transcript_id": "T-60001",
+      "text": "Member: I want to know the status of my recent hospital claim. Agent: It appears to be under review. We'll provide an update once finalized."
+    }
+  ]
+}

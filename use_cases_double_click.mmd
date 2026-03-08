@@ -1,0 +1,72 @@
+flowchart TB
+  subgraph UX[Agent Experience: 1 screen, many tools]
+    U1[Unified Agent Desktop Panel\nChat plus Forms plus Citations]
+    U2[Intent Router\nTop intents plus fallback]
+    U3[Answer Composer\nplain language step by step]
+    U4[Human Controls\ncopy edit approve escalate]
+  end
+
+  U1 --> U2 --> U3 --> U4
+
+  subgraph UC1[1 Eligibility and Benefits Explainer]
+    C11[Member Lookup non AI\nmemberLookupById and coverage periods]
+    C12[Benefits Extraction\nplan deductible copay coinsurance OOP]
+    C13[Benefit Rules Engine\ndeterministic computations]
+    C14[LLM Simplifier\ntranslate to plain language]
+    C15[Citations\nSoR fields plus plan docs]
+  end
+
+  subgraph UC2[2 Claims Status and Code Translation]
+    C21[Claims Feed\nAPI or batch from adjudication]
+    C22[Data Quality Layer\nnormalize codes join reference tables]
+    C23[Code Dictionary Service\nCARC RARC payer specific and CMS]
+    C24[Event Driven Notifier\nwhen status changes]
+    C25[LLM Translator\nwhat happened and next steps]
+    C26[Cache and Similarity Store\nreuse common explanations]
+  end
+
+  subgraph UC3[3 Policy and Workflow Doc Search Assistant]
+    C31[Content Connectors\nSharePoint Confluence Drive]
+    C32[Ingestion and Chunking\nversioned metadata]
+    C33[Vector Search plus Rerank]
+    C34[Answer with Citations\nsnippets links owners]
+    C35[Gap Handler\nrequest doc or route to SME]
+  end
+
+  subgraph UC4[4 Call Transcript Summarization and CRM Notes]
+    C41[Speech to Text\nbatch or stream]
+    C42[Transcript Store\nraw plus redacted]
+    C43[LLM Summary\nSOAP DARE or custom template]
+    C44[Structured Note Schema\nproblem actions follow ups]
+    C45[CRM Write back Tool\ncreate update case and tasks]
+    C46[Agent Review UI\napprove edit before save]
+  end
+
+  subgraph UC5[5 Prior Auth Status and Next Steps]
+    C51[PA Status API\nsubmitted pended approved denied]
+    C52[Missing Info Detector\nclinical docs codes fields]
+    C53[Policy Crosswalk\nmedical policy and UM guidelines]
+    C54[LLM Explainer\nreason plus checklist of next steps]
+    C55[Outbound Drafts\nfax email portal message templates]
+  end
+
+  subgraph UC6[6 Output Monitoring Accuracy Tone HIPAA CMS]
+    C61[Central Event Bus\nassistant outputs and tool calls]
+    C62[Automated Evaluators\nrules plus LLM as judge plus tests]
+    C63[PHI Leak Checks\nDLP regex classifiers]
+    C64[Compliance Policy Pack\nHIPAA plus CMS comms rules]
+    C65[Human QA Sampling\nqueue and adjudication]
+    C66[Dashboards and Alerts\nSLA drift risk]
+  end
+
+  U2 --> UC1
+  U2 --> UC2
+  U2 --> UC3
+  U2 --> UC4
+  U2 --> UC5
+
+  UC1 --> UC6
+  UC2 --> UC6
+  UC3 --> UC6
+  UC4 --> UC6
+  UC5 --> UC6

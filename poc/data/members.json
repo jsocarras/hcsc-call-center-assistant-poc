@@ -1,0 +1,44 @@
+{
+  "M0001": {
+    "member_id": "M0001",
+    "name": "Taylor Jordan",
+    "dob": "1984-02-11",
+    "coverage": {
+      "status": "Active",
+      "effective_date": "2025-01-01",
+      "termination_date": null,
+      "plan_id": "PPO-IL-2025-001",
+      "group": "ACME Widgets"
+    },
+    "benefits": {
+      "in_network": {
+        "deductible": {"individual": 1500, "family": 3000, "met_to_date": 400},
+        "oop_max": {"individual": 6000, "family": 12000},
+        "primary_care_visit": "$30 copay",
+        "specialist_visit": "$60 copay",
+        "rx_tier_1": "$10 copay"
+      }
+    }
+  },
+  "M0002": {
+    "member_id": "M0002",
+    "name": "Morgan Lee",
+    "dob": "1971-09-03",
+    "coverage": {
+      "status": "Inactive",
+      "effective_date": "2024-01-01",
+      "termination_date": "2025-01-31",
+      "plan_id": "HMO-TX-2024-014",
+      "group": "City of Exampleton"
+    },
+    "benefits": {
+      "in_network": {
+        "deductible": {"individual": 0, "family": 0, "met_to_date": 0},
+        "oop_max": {"individual": 4500, "family": 9000},
+        "primary_care_visit": "$0 copay",
+        "specialist_visit": "$20 copay",
+        "rx_tier_1": "$5 copay"
+      }
+    }
+  }
+}

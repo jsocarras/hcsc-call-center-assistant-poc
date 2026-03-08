@@ -1,0 +1,20 @@
+[
+  {
+    "doc_id": "DOC-001",
+    "title": "UM Workflow: Prior Authorization Intake",
+    "url": "https://intranet.example/um/prior-auth-intake",
+    "body": "This workflow describes how call center agents and UM staff intake prior authorization requests. Step 1: verify member eligibility. Step 2: confirm ordering provider NPI and servicing facility. Step 3: confirm whether clinical notes are required for the requested service (e.g., MRI). Step 4: if missing information exists, pend the request and notify the provider with a checklist of required documents."
+  },
+  {
+    "doc_id": "DOC-002",
+    "title": "Medical Policy: Advanced Imaging (MRI/CT) Documentation Requirements",
+    "url": "https://intranet.example/policies/advanced-imaging",
+    "body": "Advanced imaging services such as MRI may require clinical documentation demonstrating medical necessity. Typical requirements include recent clinical notes, conservative treatment history, and relevant diagnosis codes. For urgent/emergent scenarios, documentation requirements may differ."
+  },
+  {
+    "doc_id": "DOC-003",
+    "title": "Claims: Common Denial Codes Quick Reference",
+    "url": "https://intranet.example/claims/denial-codes",
+    "body": "CARC 197 indicates precertification/authorization/notification was absent. Agents should verify if prior authorization was required and whether the authorization number was included on the claim. RARC N130 instructs to consult plan benefit documents to determine coverage."
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "M0001": [
+    {
+      "claim_id": "CLM-10001",
+      "status": "Finalized",
+      "payment_code": "D",
+      "carc": "197",
+      "rarc": "N130",
+      "amount_billed": 1250.0,
+      "amount_paid": 0.0,
+      "service_date": "2025-02-10",
+      "provider": "Example Imaging Center"
+    },
+    {
+      "claim_id": "CLM-10002",
+      "status": "Finalized",
+      "payment_code": "P",
+      "amount_billed": 180.0,
+      "amount_paid": 120.0,
+      "service_date": "2025-02-25",
+      "provider": "Downtown Primary Care"
+    }
+  ],
+  "M0002": [
+    {
+      "claim_id": "CLM-20001",
+      "status": "In Progress",
+      "payment_code": "R",
+      "amount_billed": 540.0,
+      "amount_paid": 0.0,
+      "service_date": "2025-01-14",
+      "provider": "Example Hospital"
+    }
+  ]
+}
